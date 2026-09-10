@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2026国庆·坝上克什克腾6日避堵自驾攻略</title>
+<script src="https://aisearch-task.bj.bcebos.com/static/tailwindcss-3.4.17.js"></script>
+<style>
+:root{--bg:#faf6ef;--card:#fffdf7;--primary:#8b5a2b;--accent:#d97706;--text:#2c1810;--muted:#7c6654;--line:#e8ddc9}
+body{background:linear-gradient(180deg,#faf6ef 0%,#f5efe3 100%);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.7;margin:0}
+.hero{position:relative;min-height:360px;overflow:hidden;display:flex;align-items:flex-end;background:linear-gradient(135deg,#d97706,#8b5a2b)}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.2) 0%,rgba(0,0,0,.55) 100%)}
+.hero-content{position:relative;z-index:2;padding:36px 20px 28px;color:#fff;max-width:960px;margin:0 auto;width:100%}
+.hero-tag{display:inline-block;background:rgba(217,119,6,.9);padding:4px 14px;border-radius:20px;font-size:13px;font-weight:500;margin-bottom:12px}
+.hero h1{font-size:28px;font-weight:700;margin:0 0 8px;line-height:1.3}
+.hero-sub{font-size:14px;opacity:.92;max-width:680px}
+.wrap{max-width:920px;margin:0 auto;padding:0 16px}
+.section{margin:32px 0}
+.section-title{font-size:20px;font-weight:700;color:var(--primary);margin:0 0 16px;padding-left:12px;border-left:4px solid var(--accent)}
+.card{background:var(--card);border-radius:14px;padding:20px;box-shadow:0 2px 12px rgba(139,90,43,.08);border:1px solid var(--line)}
+.map-wrap{border:1px solid #DCDDE0;border-radius:14px;overflow:hidden}
+.map-iframe{width:100%;height:auto;aspect-ratio:1/1;border:0;display:block}
+@media(min-width:768px){.map-iframe{aspect-ratio:16/9}.hero{min-height:440px}.hero h1{font-size:36px}}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px}
+.tab-btn{background:#fff;border:1px solid var(--line);color:var(--muted);padding:8px 14px;border-radius:10px;font-size:13px;cursor:pointer;font-weight:500}
+.tab-btn.active{background:var(--primary);color:#fff;border-color:var(--primary)}
+.tab-panel{display:none}.tab-panel.active{display:block}
+.day-card{background:var(--card);border-radius:14px;padding:20px;margin-bottom:16px;border:1px solid var(--line)}
+.day-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;padding-bottom:10px;border-bottom:1px dashed var(--line);flex-wrap:wrap;gap:6px}
+.day-title{font-size:16px;font-weight:700;color:var(--primary)}
+.day-date{font-size:12px;color:var(--muted);background:#f5efe3;padding:3px 10px;border-radius:6px}
+.day-meta{background:#fff8ed;border-radius:8px;padding:10px 14px;margin-bottom:12px;font-size:13px;color:#7c5a2c;line-height:1.8}
+.day-plan{font-size:14px;line-height:1.9;color:#3d2817;margin-bottom:12px}
+.transport-line{font-size:12px;color:var(--muted);background:#f9f5ec;border-radius:6px;padding:8px 12px;margin:10px 0;border-left:3px solid var(--accent)}
+.spot{background:#fff;border-radius:10px;padding:12px 14px;border:1px solid var(--line);margin-bottom:10px}
+.spot-name{font-size:15px;font-weight:600;color:var(--primary);margin:0 0 4px}
+.spot-desc{font-size:13px;color:var(--muted);margin:0 0 8px;line-height:1.7}
+.spot-info{font-size:12px;color:#6b5038;display:flex;flex-wrap:wrap;gap:6px}
+.spot-tag{background:#f5efe3;padding:2px 8px;border-radius:4px}
+table{width:100%;border-collapse:collapse;font-size:13px;margin-top:12px}
+th{background:#f5efe3;padding:8px;text-align:left;font-weight:600;color:var(--primary);font-size:12px}
+td{padding:8px;border-bottom:1px solid var(--line);font-size:12px}
+.budget-table td{padding:10px 14px;font-size:14px}
+.budget-table tr:last-child td{background:#f5efe3;font-weight:700;color:var(--primary);border-bottom:none}
+.tips-list{padding-left:0;list-style:none}
+.tips-list li{padding:10px 14px;margin-bottom:8px;background:#fff;border-radius:8px;border-left:3px solid var(--accent);font-size:13px;line-height:1.8;color:#3d2817}
+.warn{background:#fef3c7;border-color:#f59e0b}.danger{background:#fee2e2;border-color:#ef4444}
+.route-compare{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:12px 0}
+.route-opt{background:#f9f5ec;border-radius:8px;padding:12px;border-top:3px solid var(--accent)}
+.route-opt.best{background:#fef3c7;border-color:#059669}
+.route-opt h4{margin:0 0 4px;font-size:13px;color:var(--primary)}
+.route-opt p{margin:0;font-size:12px;color:var(--muted);line-height:1.7}
+footer{text-align:center;padding:32px 16px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);margin-top:32px}
+footer p{margin:0}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-tag">2026 国庆专版 · 避堵秘境自驾</span>
+    <h1>承德—坝上—克什克腾6日金秋自驾攻略</h1>
+    <p class="hero-sub">北京/承德出发，避开热门拥堵点，穿越废弃秘境五道沟、御道口西环线、塞罕坝小众穿越线、达达线延长线、99号公路下半段、大青山反向入口，把草原、石林、沙漠、白桦林与金色杨树林一次收入囊中。</p>
+  </div>
+</header>
+<div class="wrap">
+
+<section class="section" data-section="overview">
+  <h2 class="section-title">行程概述</h2>
+  <div class="card" style="font-size:14px;line-height:1.9;color:#3d2817">
+    <p>这是一份专为<strong>2026年国庆假期（10月1日—10月6日）</strong>定制的6天5晚自驾攻略，适配从<strong>北京或承德</strong>出发的自驾爱好者。全程约1500公里，人均预算约2500—3200元，节奏张弛有度，重点解决国庆坝上自驾三大痛点——<strong>南门堵车、达达线拥堵、大青山出入口瘫痪</strong>。</p>
+    <p style="margin-top:10px">Day1探访废弃但秋色绝美的五道沟秘境，沿国家一号风景大道北进御道口；Day2只买御道口西环线门票，下午穿越塞罕坝西侧避乌兰布统南门大堵车，宿元宝山村；Day3走新开通达达线延长线最优路线，经达里湖南岸、白音敖包、红立山直抵阿斯哈图石林；Day4穿越99号公路下半段与赛罕乌拉，傍晚辽庆州白塔赏金色杨树林，宿林西；Day5反向从林西进大青山避经棚车流，备永明村绕堵方案；Day6玉龙沙湖公共沙漠区体验后高速返程。</p>
+    <p style="margin-top:10px;color:var(--muted);font-size:13px">★<strong>中秋非国庆出行者</strong>：Day2可从乌兰布统南门进游览烟子窑湖、十二座联营白桦林、皇家鹿苑白桦林；Day3可选桦木沟—天太永—西拉木伦特大桥入达达线（注意漫水桥水情）；Day3下午可加黄岗梁森林公园打卡。</p>
+  </div>
+</section>
+
+<section class="section" data-section="itinerary-map">
+  <h2 class="section-title">行程互动地图</h2>
+  <div class="map-wrap" data-map-card>
+    <iframe id="itinerary-map-iframe" class="map-iframe" src="https://chat.baidu.com/aichat/api/htmlviewer/page#/itinerary-map" title="行程互动地图"></iframe>
+  </div>
+</section>
+
+<section class="section" data-section="transport">
+  <h2 class="section-title">出行方式</h2>
+  <div class="card">
+    <p style="margin:0 0 12px;font-size:14px">本次为全程自驾。北京出发走京承高速—承围高速—围场北下；承德出发直接承围高速。<strong>国庆高速免费时段10月1日0:00—10月7日24:00</strong>，建议10月1日清晨6:00前出发避开北京出城高峰；中秋假期（9月25—27日）高速不免费。</p>
+    <div style="background:#f9f5ec;border-radius:8px;padding:12px 14px;font-size:13px;color:#6b5038;line-height:1.8">
+      <strong>车型建议：</strong>首选SUV/越野车（草原自然路、漫水桥路段通过性更好）；轿车谨慎通行天太永漫水桥、铁砂线北段，建议选高速方案。<br>
+      <strong>必备装备：</strong>冲锋衣+薄羽绒服（早晚2—5℃）、备防滑链、对讲机（车队）、充足饮用水、离线地图。
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">每日详情规划</h2>
+  <div class="tabs" role="tablist" aria-label="每日行程切换">
+    <button type="button" class="tab-btn active" data-day="1">Day1 五道沟</button>
+    <button type="button" class="tab-btn" data-day="2">Day2 御道口</button>
+    <button type="button" class="tab-btn" data-day="3">Day3 达达线</button>
+    <button type="button" class="tab-btn" data-day="4">Day4 99号公路</button>
+    <button type="button" class="tab-btn" data-day="5">Day5 大青山</button>
+    <button type="button" class="tab-btn" data-day="6">Day6 玉龙沙湖</button>
+  </div>
+
+  <div class="tab-panel active" data-day-panel="1" role="tabpanel">
+    <div class="day-card">
+      <div class="day-header"><span class="day-title">Day1 · 10月1日：五道沟秘境 → 国家一号风景大道 → 御道口</span><span class="day-date">约260km / 4.5h车程</span></div>
+      <div class="day-meta"><strong>天气：</strong>围场多云3—17℃西北风3—4级；<strong>穿搭：</strong>长袖+抓绒+冲锋衣，厚长裤徒步鞋，备薄羽绒服帽手套。</div>
+      <p class="day-plan">清晨6:00前从北京/承德出发沿承围高速北进避出城高峰。抵达围场后不进县城，直接导航<strong>五道沟风景区</strong>——原林场已废弃景区，秋季漫山金黄白桦与落叶松交叠游客极少。游览2—3小时后沿门口<strong>国家一号风景大道</strong>一路向北，景观大道串联草原森林湿地可随时停车拍照。傍晚抵<strong>御道口牧场</strong>附近入住休整。</p>
+      <div class="transport-line">五道沟→国家一号风景大道：113公里/2h；国家一号风景大道→御道口牧场：148公里/2h13分</div>
+      <div class="spot"><h4 class="spot-name">五道沟风景区（废弃秘境）</h4><p class="spot-desc">木兰围场内已废弃原森林景区，自然风貌保存完好，秋季层林尽染游客极少，是首日避堵拍秋景的宝藏地。林场旧路SUV通行更佳。</p><div class="spot-info"><span class="spot-tag">全天开放</span><span class="spot-tag">免费</span><span class="spot-tag">游览2—3h</span><span class="spot-tag">自然摄影</span></div></div>
+      <div class="spot"><h4 class="spot-name">国家一号风景大道</h4><p class="spot-desc">东起塞罕坝西至丰宁大滩，御道口段草原、森林、风车、湿地层次丰富，秋季金黄铺地是坝上经典自驾公路。</p><div class="spot-info"><span class="spot-tag">公路免费</span><span class="spot-tag">随走随停</span></div></div>
+      <h4 style="margin-top:14px;font-size:14px;color:var(--primary)">今晚住宿 · 御道口牧场/御道口镇</h4>
+      <table><tr><th>酒店</th><th>区域</th><th>参考价</th><th>理由</th><th>预订</th></tr>
+      <tr><td>御道口草原度假酒店</td><td>御道口镇</td><td>¥300—500</td><td>位置便利次日早进景区省时</td><td>待核实</td></tr>
+      <tr><td>塞罕坝御道口客栈</td><td>御道口牧场</td><td>¥250—400</td><td>性价比高有停车位有暖气</td><td>待核实</td></tr>
+      <tr><td>御道口牧场景观民宿</td><td>风景大道旁</td><td>¥350—600</td><td>推窗见草原适合拍日出</td><td>待核实</td></tr></table>
+      <p style="font-size:12px;color:var(--muted);margin-top:6px">*国庆房源紧张建议提前2—3周预订，优先选带暖气酒店。</p>
+    </div>
+  </div>
+
+  <div class="tab-panel" data-day-panel="2" role="tabpanel">
+    <div class="day-card">
+      <div class="day-header"><span class="day-title">Day2 · 10月2日：御道口西环线 → 塞罕坝西穿 → 元宝山</span><span class="day-date">约290km / 5h车程</span></div>
+      <div class="day-meta"><strong>天气：</strong>围场—乌兰布统多云4—16℃午后风大；<strong>穿搭：</strong>分层穿搭，风大防风。</div>
+      <p class="day-plan">清晨7:00前购票进御道口景区，<strong>只买西环线票（60元/人）</strong>即可，按<strong>桃山湖→龟山→大峡谷→太阳湖</strong>顺序游览——龟山和大峡谷俯瞰视角最佳，桃山湖晨雾、太阳湖秋草各有韵味。中午在<strong>塞罕坝机械林场</strong>场部午餐补给。</p>
+      <p class="day-plan" style="margin-top:8px"><strong>⚠️国庆避堵关键：</strong>下午不走乌兰布统南门（必堵4—6h），导航<strong>五彩斑斓观景台</strong>向西穿塞罕坝内部路，再导航<strong>元宝山村</strong>走乌兰布统西侧304省道抵达。沿塞罕坝西缘行进，林海草原层林尽染景色美且几乎无拥堵。</p>
+      <div class="transport-line">御道口→塞罕坝机械林场：26.5公里/30分；机械林场→五彩斑斓观景台：12.3公里/18分；观景台→元宝山村：253.5公里/3h54分</div>
+      <div class="route-compare">
+      <div class="route-opt best"><h4>✅国庆方案（推荐）</h4><p>五彩斑斓观景台→塞罕坝西穿→304省道→元宝山村，避南门大堵车</p></div>
+      <div class="route-opt"><h4>🌿非国庆方案</h4><p>乌兰布统南门→烟子窑湖→十二座联营白桦林→皇家鹿苑白桦林，宿乌兰布统内</p></div>
+      </div>
+      <div class="spot"><h4 class="spot-name">御道口西环线（桃山湖/龟山/大峡谷/太阳湖）</h4><p class="spot-desc">2026年分环线售票，西环线四大景点60元/人。龟山与大峡谷俯瞰层林尽染最佳，桃山湖晨雾绝美，太阳湖湿地秋草金黄。5:30—20:00开放，19:00停售。</p><div class="spot-info"><span class="spot-tag">西环线60元/人</span><span class="spot-tag">游览3—4h</span><span class="spot-tag">早7点入园</span></div></div>
+      <div class="spot"><h4 class="spot-name">塞罕坝机械林场</h4><p class="spot-desc">塞罕坝主体免费开放，百万亩落叶松秋季全黄，场部有餐饮、加油站、超市，是重要补给点。</p><div class="spot-info"><span class="spot-tag">免费</span><span class="spot-tag">午餐补给加油</span></div></div>
+      <div class="spot"><h4 class="spot-name">五彩斑斓观景台（塞罕坝西穿入口）</h4><p class="spot-desc">向西切入塞罕坝林场内部路，红黄绿三色交织，是通往304省道避堵捷径节点。</p><div class="spot-info"><span class="spot-tag">免费</span><span class="spot-tag">国庆避堵关键</span></div></div>
+      <h4 style="margin-top:14px;font-size:14px;color:var(--primary)">今晚住宿 · 乌兰布统元宝山村</h4>
+      <table><tr><th>酒店</th><th>区域</th><th>参考价</th><th>理由</th><th>预订</th></tr>
+      <tr><td>元宝山度假民宿</td><td>元宝山村</td><td>¥350—600</td><td>304省道旁次日去达达线方便</td><td>待核实</td></tr>
+      <tr><td>草原牧歌酒店</td><td>元宝山周边</td><td>¥300—500</td><td>有暖气大停车场房态较充足</td><td>待核实</td></tr>
+      <tr><td>星空蒙古包营地</td><td>304省道沿线</td><td>¥400—700</td><td>特色体验夜晚可拍草原星空</td><td>待核实</td></tr></table>
+    </div>
+  </div>
+
+  <div class="tab-panel" data-day-panel="3" role="tabpanel">
+    <div class="day-card">
+      <div class="day-header"><span class="day-title">Day3 · 10月3日：达达线延长线 → 达里湖 → 白音敖包 → 石林</span><span class="day-date">约210km / 4h车程</span></div>
+      <div class="day-meta"><strong>天气：</strong>克什克腾旗多云2—14℃草原风大体感冷；<strong>穿搭：</strong>防风为主，抓绒+冲锋衣，戴帽手套。</div>
+      <p class="day-plan">今日最精华草原公路日。上午从酒店出发走2026年新开通<strong>达达线延长线</strong>（未铺完改方案2/3兜底）：<strong>酒店→伊和诺日村→达达线零公里起点→达里湖南岸</strong>（往西骆驼文化基地附近找牧民小路下湖避人流）→<strong>白音敖包沙地云杉</strong>。</p>
+      <div class="route-compare">
+      <div class="route-opt best"><h4>🥇方案1：达达线延长线（最优）</h4><p>伊和诺日村→零公里→达里湖南岸（骆驼文化基地找牧民下湖）→白音敖包。风景最原始车流最少，9月中旬通车，出发前确认。</p></div>
+      <div class="route-opt"><h4>🥈方案2：桦木沟—天太永（备选）</h4><p>桦木沟→天太永村→西拉木伦特大桥→白音敖包。天太永村南漫水小桥非国庆（9月中下旬）通常可通，轿车慎行。</p></div>
+      <div class="route-opt"><h4>🥉方案3：全程高速（保底）</h4><p>乌兰布统收费站→贡格尔收费站→白音敖包。最稳妥但风景弱，适合轿车/恶劣天气。</p></div>
+      </div>
+      <p class="day-plan" style="margin-top:10px">下午从白音敖包导航<strong>红立山</strong>进入铁砂线北段（冷门秋色小路）；<strong>国庆</strong>直接导航阿斯哈图石林南门走热阿线北段入住石林附近；<strong>非国庆</strong>可加<strong>黄岗梁森林公园步道观景台</strong>登顶打卡后再折返。</p>
+      <div class="transport-line">伊和诺日村→达里湖南岸：66公里/1h18分；达里湖→白音敖包：67公里/1h08分；白音敖包→红立山：14.4公里/15分；红立山→阿斯哈图石林：61.4公里/1h23分</div>
+      <div class="spot"><h4 class="spot-name">达达线（含新延长线）</h4><p class="spot-desc">中国最美草原公路之一，新延长段从伊和诺日村接入零公里起点，贡格尔草原金黄起伏牛羊成群，公路本身就是最大景点，全程免费。</p><div class="spot-info"><span class="spot-tag">公路免费</span><span class="spot-tag">零公里打卡</span></div></div>
+      <div class="spot"><h4 class="spot-name">达里湖南岸</h4><p class="spot-desc">内蒙古第二大淡水湖天鹅迁徙必经地。建议往西骆驼文化基地找牧民下湖（付少量费用）避景区大门人潮，湖面日落绝美。</p><div class="spot-info"><span class="spot-tag">景区约90/牧民道20—50元车</span><span class="spot-tag">日落推荐</span></div></div>
+      <div class="spot"><h4 class="spot-name">白音敖包沙地云杉</h4><p class="spot-desc">世界仅存沙地红皮云杉原始林，金黄草原突起一片深绿云杉色彩对比强烈。</p><div class="spot-info"><span class="spot-tag">门票待核实</span><span class="spot-tag">世界罕见生态</span></div></div>
+      <div class="spot"><h4 class="spot-name">阿斯哈图石林（克什克腾石阵）</h4><p class="spot-desc">5A级世界地质奇观，200多万年冰川造就花岗岩石林，"九仙女""鲲鹏落草原"形态奇特，秋日落日照石林金光灿灿。门票120+观光车40，8:00—17:30。</p><div class="spot-info"><span class="spot-tag">门票+车约160元</span><span class="spot-tag">5A</span><span class="spot-tag">游览2—3h</span></div></div>
+      <p style="font-size:12px;color:#d97706;margin-top:8px">⚠️非国庆车友下午可加黄岗梁森林公园步道观景台（免费）登顶，多预留1.5h。</p>
+      <h4 style="margin-top:12px;font-size:14px;color:var(--primary)">今晚住宿 · 阿斯哈图石林/巴彦查干苏木</h4>
+      <table><tr><th>酒店</th><th>区域</th><th>参考价</th><th>理由</th><th>预订</th></tr>
+      <tr><td>阿斯哈图石林景区酒店</td><td>石林南门</td><td>¥300—500</td><td>距景区最近可拍晨光石林</td><td>待核实</td></tr>
+      <tr><td>巴彦查干牧家民宿</td><td>巴彦查干苏木</td><td>¥200—350</td><td>蒙古族风情可吃手把肉</td><td>待核实</td></tr>
+      <tr><td>热阿线度假酒店</td><td>热阿线沿线</td><td>¥350—550</td><td>供暖好停车方便</td><td>待核实</td></tr></table>
+    </div>
+  </div>
+
+  <div class="tab-panel" data-day-panel="4" role="tabpanel">
+    <div class="day-card">
+      <div class="day-header"><span class="day-title">Day4 · 10月4日：99号公路下半段 → 赛罕乌拉 → 辽庆州白塔 → 林西</span><span class="day-date">约385km / 6h车程</span></div>
+      <div class="day-meta"><strong>天气：</strong>克旗—巴林右旗多云1—13℃保护区风大；<strong>穿搭：</strong>最厚装备上身薄羽绒穿上。</div>
+      <p class="day-plan">早晨导航<strong>遥鲁海日罕山（半拉山）</strong>，途经点加<strong>同合顺</strong>，走<strong>99号草原公路下半段</strong>——起伏草原白桦交织是达达/热阿线之外更小众秘境公路。终点打卡后<strong>折返约500米</strong>，导航<strong>阿尔其德努如→赛罕乌拉荣升景区</strong>穿越吉日格斯台保护区；之后导航<strong>辽庆州白塔</strong>，白塔附近道路两旁全是金黄白杨树，傍晚斜阳透过金叶照白塔是最具人文秋意画面。傍晚抵<strong>林西县</strong>入住。</p>
+      <div class="transport-line">遥鲁海日罕山→赛罕乌拉：250公里/3h43分；赛罕乌拉→辽庆州白塔：29.9公里/37分；白塔→林西县：105.3公里/1h52分</div>
+      <div class="spot"><h4 class="spot-name">99号公路下半段（遥鲁海日罕山—同合顺）</h4><p class="spot-desc">新晋网红草原公路下半段车流更少，起伏公路秋季铺成金色地毯，遥鲁海日罕山（半拉山）是标志性打卡点。</p><div class="spot-info"><span class="spot-tag">公路免费</span><span class="spot-tag">小众秘境</span></div></div>
+      <div class="spot"><h4 class="spot-name">赛罕乌拉荣升景区（吉日格斯台保护区穿越）</h4><p class="spot-desc">穿越自然保护区原始林区公路，秋季白桦落叶松交错，山路蜿蜒车辆稀少偶有野生动物。</p><div class="spot-info"><span class="spot-tag">保护区穿越</span><span class="spot-tag">弯多注意车速</span></div></div>
+      <div class="spot"><h4 class="spot-name">辽庆州白塔（释迦佛舍利塔）</h4><p class="spot-desc">辽代千年白塔，周边两排高大白杨树秋季全黄，傍晚斜阳透过金叶照洁白塔身是"金色隧道"摄影圣地。</p><div class="spot-info"><span class="spot-tag">免费</span><span class="spot-tag">文物古迹</span><span class="spot-tag">夕阳金叶最美</span></div></div>
+      <h4 style="margin-top:14px;font-size:14px;color:var(--primary)">今晚住宿 · 林西县城</h4>
+      <table><tr><th>酒店</th><th>区域</th><th>参考价</th><th>理由</th><th>预订</th></tr>
+      <tr><td>林西宾馆</td><td>县城中心</td><td>¥250—400</td><td>老牌酒店设施齐供暖好</td><td>待核实</td></tr>
+      <tr><td>桔子精品酒店</td><td>县城新区</td><td>¥200—350</td><td>新装修干净停车场大</td><td>待核实</td></tr>
+      <tr><td>连锁酒店（近高速口）</td><td>高速口</td><td>¥220—380</td><td>次日上高速方便</td><td>待核实</td></tr></table>
+    </div>
+  </div>
+
+  <div class="tab-panel" data-day-panel="5" role="tabpanel">
+    <div class="day-card">
+      <div class="day-header"><span class="day-title">Day5 · 10月5日：反向大青山 → 永明村绕堵 → 翁牛特旗</span><span class="day-date">约250km / 4h车程</span></div>
+      <div class="day-meta"><strong>天气：</strong>林西—克旗—翁牛特多云1—12℃；<strong>穿搭：</strong>分层穿搭大青山顶风大备厚外层防滑鞋。</div>
+      <p class="day-plan"><strong>🚨今日核心避堵：</strong>95%游客从经棚南侧上大青山，国庆南门必堵2—3h。我们从<strong>林西出发</strong>，早导航<strong>老鹞南沟→沟老场</strong>，从北侧反向进入大青山——路窄但车极少，即便遇堵也有乡村路回旋；快到山顶前提前在路边空地停车，避免下山被堵景区里面。</p>
+      <p class="day-plan" style="margin-top:8px">游览结束后如南侧出口严重堵车，不要硬挤经棚，直接导航<strong>永明村农队组→翁牛特旗</strong>绕过大青山门口拥堵直接上省道/高速，比硬堵省1.5—2h。晚宿翁牛特旗（乌丹镇）。</p>
+      <div class="transport-line">老鹞南沟→大青山（反向）：158.2公里/2h37分；大青山→永明村绕行→翁牛特旗：91.5公里+绕行约1h11分</div>
+      <div class="spot"><h4 class="spot-name">克什克腾旗大青山景区（第四纪冰川遗迹）</h4><p class="spot-desc">世界地质公园以花岗岩冰臼群闻名，山顶岩面是世界规模最大冰臼群，第四纪冰川天然博物馆，秋季山顶可俯瞰层林尽染山地草原。</p><div class="spot-info"><span class="spot-tag">门票+索道约160元</span><span class="spot-tag">游览2.5—3h</span><span class="spot-tag">反向入山避堵</span></div></div>
+      <div style="background:#fee2e2;border-radius:8px;padding:10px 14px;margin:10px 0;font-size:12px;color:#991b1b;line-height:1.8;border-left:3px solid #ef4444"><strong>⚠️防堵必看：</strong>①快到沟老场时提前停车别开到山顶最里面；②下山前看实时路况南门红堵立即走永明村绕行；③永明村为乡村水泥路轿车可通会车注意避让。</div>
+      <h4 style="margin-top:12px;font-size:14px;color:var(--primary)">今晚住宿 · 翁牛特旗乌丹镇</h4>
+      <table><tr><th>酒店</th><th>区域</th><th>参考价</th><th>理由</th><th>预订</th></tr>
+      <tr><td>玉龙沙湖度假酒店</td><td>景区旁</td><td>¥400—700</td><td>推窗见沙漠可拍日出星空</td><td>待核实</td></tr>
+      <tr><td>乌丹镇商务连锁酒店</td><td>镇中心</td><td>¥200—350</td><td>餐饮多性价比高</td><td>待核实</td></tr>
+      <tr><td>翁牛特旗温泉酒店</td><td>乌丹镇</td><td>¥300—500</td><td>有温泉泡池解自驾疲劳</td><td>待核实</td></tr></table>
+    </div>
+  </div>
+
+  <div class="tab-panel" data-day-panel="6" role="tabpanel">
+    <div class="day-card">
+      <div class="day-header"><span class="day-title">Day6 · 10月6日：玉龙沙湖公共沙漠 → 高速返程</span><span class="day-date">沙漠半日+返程</span></div>
+      <div class="day-meta"><strong>天气：</strong>翁牛特多云1—14℃沙漠白天日照强；<strong>穿搭：</strong>内层+防风外套，亮色衣服拍照，墨镜防沙鞋。</div>
+      <p class="day-plan">最后一天节奏轻松。早导航<strong>玉龙沙湖</strong>，到景区大门后不必进收费景区，<strong>继续沿公路前开一段</strong>，路边就有大片公共区域沙漠免费体验——爬沙丘、拍沙漠绿洲同框、滑沙足够，还省80元门票。沙漠玩2h左右，上午10:30—11:00即可上高速返程。10月6日是国庆倒数第二天，建议午前上高速避下午进京高峰。</p>
+      <div class="transport-line">翁牛特旗→玉龙沙湖公共沙漠区：约30公里/40分；玉龙沙湖→北京：约550公里/6.5—7h（大广/京承高速）</div>
+      <div class="spot"><h4 class="spot-name">玉龙沙湖（公共沙漠区）</h4><p class="spot-desc">科尔沁沙地西缘红白沙漠，"中华第一龙"碧玉龙出土地。景区门外前开即有大片公共沙漠免费开放，沙丘湖泊绿洲怪石相映足够体验沙漠风光。玩越野骑骆驼再购票进景区。</p><div class="spot-info"><span class="spot-tag">公共区免费/景区80元</span><span class="spot-tag">游览2h</span><span class="spot-tag">沙漠体验</span></div></div>
+      <div style="background:#dcfce7;border-radius:8px;padding:10px 14px;margin:10px 0;font-size:12px;color:#166534;line-height:1.8;border-left:3px solid #22c55e"><strong>🏠返程提示：</strong>建议11:00前上大广高速，承德—北京段15:00后会现返程高峰；遇拥堵可在赤峰/承德市区晚餐后错峰进京。</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">费用估算（人均，2人一车）</h2>
+  <div class="card">
+    <table class="budget-table">
+      <tr><td>🚗 交通（油费+过路费分摊）</td><td style="text-align:right">¥800—1000</td></tr>
+      <tr><td>🏨 住宿（5晚中档）</td><td style="text-align:right">¥800—1200</td></tr>
+      <tr><td>🎫 景点门票（御道口+阿斯哈图+大青山索道+选进）</td><td style="text-align:right">¥400—550</td></tr>
+      <tr><td>🍜 餐饮（6天含草原特色餐）</td><td style="text-align:right">¥500—700</td></tr>
+      <tr><td>🎪 其他（骑马/滑沙/牧民道等）</td><td style="text-align:right">¥200—300</td></tr>
+      <tr><td>📌 合计（人均）</td><td style="text-align:right"><strong>¥2700—3750</strong></td></tr>
+    </table>
+    <p style="font-size:13px;color:var(--muted);margin-top:10px">国庆住宿上浮30%—50%，提前预订可锁低价；选公共沙漠区、不进部分收费大门可压缩门票预算。</p>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">出行避坑指南</h2>
+  <div class="card">
+    <ul class="tips-list">
+      <li class="danger"><strong>🚫国庆乌兰布统南门必堵：</strong>10月1—5日御克线南门早8点—下午4点堵3—6小时，务必走五彩斑斓观景台向西穿塞罕坝→304省道→元宝山村，或前一晚住机械林场早7点前通过。</li>
+      <li class="warn"><strong>🛣️达达线延长线临行确认：</strong>预计2026年9月中旬通车，出发前3天搜"达达线延长线通车"确认最后几公里；未通则走方案2桦木沟—天太永并看漫水桥水情，水大走方案3高速。</li>
+      <li><strong>🌡️坝上秋季极寒：</strong>国庆夜间0—3℃白天10—16℃，必须冲锋衣+抓绒+薄羽绒三层，帽围巾手套必备；草原风大体感比实际低5—8℃。</li>
+      <li><strong>🚙加油策略：</strong>每天出发前加满油；进达达线/热阿线/99号公路前在经棚/巴彦查干/统布镇补满；草原加油站间隔远国庆排队，别等亮灯再找。</li>
+      <li><strong>🦌牧民道规则：</strong>不随意碾草场，下道找牧民路提前打招呼付费（20—50元/车）；遇牛羊减速不鸣笛。</li>
+      <li><strong>📱信号导航：</strong>塞罕坝西穿、铁砂线北段、99号公路部分无信号，提前下载赤峰全域离线地图；穿越路段保持车距。</li>
+      <li><strong>🏔️黄岗梁国庆慎去：</strong>国庆黄岗梁车流极大停车场饱和盘山路堵死，本攻略国庆版已删；中秋非国庆（9.25—27）人流少可加。</li>
+      <li><strong>🍖餐饮建议：</strong>景区门口溢价高，优先在机械林场、经棚、林西、乌丹等城镇用餐；手把肉奶茶涮羊肉问清价再点。</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">近期当地特色</h2>
+  <div class="card">
+    <p style="font-size:14px;line-height:1.8;color:var(--muted);margin:0">暂未查到2026年国庆期间克什克腾/乌兰布统已官方确认的大型节庆活动。国庆坝上核心体验就是秋景本身——白桦林全黄、草原铺金、南归天鹅歇脚达里湖，是一年中色彩最饱和的摄影窗口期，无需专程参加活动即享金秋盛景。建议出发前一周关注"克什克腾文旅""围场文旅"公众号，如有临时那达慕、金秋摄影节可灵活穿插。</p>
+  </div>
+</section>
+
+</div>
+
+<script id="itinerary-map-data" type="application/json">
+{"title":"承德—坝上—克什克腾6日金秋避堵自驾","routes":[{"label":"第一天","points":[{"coord":[116.906988,41.940812],"image":"","name":"五道沟风景区","desc":"00:00-24:00 营业","uid":"dffd631cc55ef6bc39221c9b","score":5},{"coord":[117.256751,42.403022],"image":"","name":"国家一号风景大道(御道口起点)","desc":"05:30-20:00 营业","uid":"82a68d35555c82bc0d3ddad7","score":4},{"coord":[117.102975,42.274855],"image":"","name":"国营御道口牧场","desc":"河北省承德市围场满族蒙古族自治县御道口风景区内","uid":"1c2f33ea9223ae73c51b7596","score":0}]},{"label":"第二天","points":[{"coord":[117.135508,42.292273],"image":"","name":"御道口草原森林风景区","desc":"05:30-20:00 营业","uid":"72e57fd75be522b6f8dc85c4","score":4.5},{"coord":[117.223145,42.467082],"image":"","name":"塞罕坝机械林场","desc":"河北省承德市围场满族蒙古族自治县塞罕坝机械林场","uid":"6be8c844a0594171f82d61ae","score":0},{"coord":[117.046523,42.601799],"image":"","name":"元宝山村","desc":"内蒙古自治区赤峰市克什克腾旗乌兰布统旅游景区","uid":"5211d2198c04c3587cc8768b","score":0}]},{"label":"第三天","points":[{"coord":[116.739061,43.259741],"image":"","name":"达里湖南岸景区","desc":"08:00-17:30 营业","uid":"b717080ff5db73e1ab059d69","score":4.1},{"coord":[117.213314,43.522323],"image":"","name":"白音敖包沙地云杉景区","desc":"内蒙古自治区赤峰市克什克腾旗白音敖包国家级自然保护区内","uid":"aad0d5c8b93ae27489f15db2","score":4.7},{"coord":[117.531276,43.96732],"image":"","name":"阿斯哈图石林景区","desc":"08:00-17:30 营业","uid":"258f12e830dced033904b122","score":5}]},{"label":"第四天","points":[{"coord":[118.660875,44.259351],"image":"","name":"赛罕乌拉荣升风景名胜区","desc":"06:00-18:00 营业","uid":"250be91e144d5052475726b1","score":3.4},{"coord":[118.526758,44.210097],"image":"","name":"辽庆州白塔","desc":"00:00-24:00 营业","uid":"1eeed54660e5dff1b4147f81","score":4.8},{"coord":[118.062461,43.624209],"image":"","name":"林西县","desc":"","uid":"2185da0023e487e1d0ff23e4","score":0}]},{"label":"第五天","points":[{"coord":[118.684378,43.400391],"image":"","name":"克什克腾旗大青山景区","desc":"赤峰市巴林右旗","uid":"923ffd00274645b4d82f288a","score":0}]},{"label":"第六天","points":[{"coord":[119.050985,43.139763],"image":"","name":"玉龙沙湖","desc":"08:30-17:30 营业","uid":"cb4fd1469e9502419c9d6887","score":4.3}]}]}
+</script>
+<script>
+(function () {
+  var frame = document.getElementById('itinerary-map-iframe');
+  var targetOrigin = new URL(frame.getAttribute('src'), location.href).origin;
+  var payload = JSON.parse(document.getElementById('itinerary-map-data').textContent);
+  window.addEventListener('message', function (event) {
+    if (event.source === frame.contentWindow && event.data && event.data.type === 'widget:ready') {
+      frame.contentWindow.postMessage({type: 'widget:init', payload: payload}, targetOrigin);
+    }
+  });
+})();
+(function(){var btns=document.querySelectorAll('.tab-btn'),panels=document.querySelectorAll('.tab-panel');btns.forEach(function(btn){btn.addEventListener('click',function(){var d=this.getAttribute('data-day');btns.forEach(function(b){b.classList.remove('active');});panels.forEach(function(p){p.classList.remove('active');});this.classList.add('active');document.querySelector('[data-day-panel="'+d+'"]').classList.add('active');});});})();
+</script>
+<footer>
+  <p>2026 国庆坝上·克什克腾避堵自驾攻略 · 文心旅行定制</p>
+  <p style="margin:6px 0 0;font-size:12px;opacity:.8">出发前请再确认达达线延长线通车情况与实时天气，祝您旅途平安</p>
+</footer>
+</body>
+</html><!--24554983682573747210091010-->
